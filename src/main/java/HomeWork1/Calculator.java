@@ -11,28 +11,28 @@ public class Calculator {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         double answer;
         String a;
-        char sum;
+        char sign;
         System.out.print("Введите первое число:");
         double number1 = Double.parseDouble(reader.readLine());
         System.out.println(number1);
         System.out.print("Введите оперцию(+,-,*,/):");
         a = reader.readLine();
-        sum = a.charAt(0);
+        sign = a.charAt(0);
         System.out.print("Введите второе число:");
         double number2 = Double.parseDouble(reader.readLine());
-        if (sum == '+'){
+        if (sign == '+'){
             answer = number1 + number2;
             System.out.println("Равно: " + answer);
         }
-        else if (sum == '-'){
+        else if (sign == '-'){
             answer = number1 - number2;
             System.out.println("Ответ: " + answer);
         }
-        else if (sum == '*'){
+        else if (sign == '*'){
             answer = number1 * number2;
             System.out.println("Ответ: " +answer);
         }
-        else if (sum == '/'){
+        else if (sign == '/'){
             answer = number1 / number2;
             System.out.println("Ответ: " + answer);
         }
